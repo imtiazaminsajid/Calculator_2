@@ -11,25 +11,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
+        <TextView
+            android:id="@+id/et2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:hint="0"
+            android:textStyle="italic"
+            android:textSize="40dp" />
+
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
             android:id="@+id/et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="15dp"
+            android:textStyle="bold"
+            android:hint="0"
             android:textSize="65dp" />
+
 
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         >
 
         <Button
             android:id="@+id/back"
-            android:background="#6c6666"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
@@ -175,7 +196,7 @@
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         >
 
         <Button
@@ -209,13 +230,13 @@
             />
 
         <Button
-            android:id="@+id/equal"
+            android:id="@+id/plus_equal"
             android:layout_width="0dp"
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="="
+            android:text="±"
             />
 
 
@@ -225,7 +246,7 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         >
 
     <Button
@@ -249,24 +270,17 @@
         />
 
     <Button
-        android:id="@+id/plus_equal"
+        android:id="@+id/equal"
         android:layout_width="0dp"
+        android:background="#6c6666"
         android:textSize="25sp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
-        android:layout_weight="0.25"
-        android:text="±"
+        android:layout_weight="0.5"
+        android:text="="
         />
 
-    <Button
-        android:id="@+id/close"
-        android:layout_width="0dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.25"
-        android:text="off"
-        />
+
 
     </TableRow>
 
